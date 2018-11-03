@@ -1,8 +1,9 @@
-package com.example.yoshitakakato.portl
+package com.example.yoshitakakato.portl.activity
 
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
+import com.example.yoshitakakato.portl.R
 import kotlinx.android.synthetic.main.activity_navigation.*
 
 class NavigationActivity : AppCompatActivity() {

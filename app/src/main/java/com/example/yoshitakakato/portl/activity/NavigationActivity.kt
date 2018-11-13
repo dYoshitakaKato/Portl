@@ -1,8 +1,13 @@
 package com.example.yoshitakakato.portl.activity
 
+import android.content.Context
 import android.os.Bundle
+import android.util.AttributeSet
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import com.example.yoshitakakato.portl.R
+import com.example.yoshitakakato.portl.databinding.ActivityNavigationBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_navigation.*
 
@@ -29,7 +34,7 @@ class NavigationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigation)
-
+        val binding = DataBindingUtil.setContentView<ActivityNavigationBinding>(this, R.layout.activity_navigation)
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
 }
